@@ -10,6 +10,7 @@ const app = express();
 app.get('/', (req, res) => {
   res.send("Hello de mexico para el mundo");
 });
+
 app
   .use(bodyParser.json())
   .use((req, res, next) => {
